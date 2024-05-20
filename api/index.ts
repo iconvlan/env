@@ -30,7 +30,7 @@ app.post("/shift-data", async (req: any, res: any) => {
         spreadsheetId: process.env.SHEET_ID,
         range: "Form Responses 1!A2:E",
         insertDataOption: "INSERT_ROWS",
-        valueInputOption: "RAW",
+        valueInputOption: "USER_ENTERED",
         requestBody: { values: rowData },
       });
 
